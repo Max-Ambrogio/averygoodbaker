@@ -27,10 +27,24 @@
 			
 		</div>
 		<div class="hero-video">
-			<video playsinline muted autoplay loop preload="auto">
+			<div class="slider-container">
+				<div class="slider">
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 0.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 1.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 2.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 3.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 4.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 5.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 6.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 7.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 8.png');"></div>
+					<div class="slide" style="background-image: url('/dist/images/Layer\ 9.png');"></div>
+				</div>
+			</div>
+			<!-- <video playsinline muted autoplay loop preload="auto">
 				<source src="./dist/images/avery-hero.mp4" type="video/mp4">
 				Your browser does not support the video tag.
-			</video>
+			</video> -->
 			<a href="#form" class="shop-all-btn">Shop All</a>
 		</div>
 	</section>
@@ -42,23 +56,41 @@
 		<div class="menu-items-container">
 			<div class="card one">
 				<!-- <a class="card-link" href="#form"></a> -->
-				<p class="price">&dollar;16</p>
+				<p class="price">&dollar;24.00</p>
 				
-				<p class="item-name">1 Dozen Cookies</p>
+				<p class="item-name">A dozen single cookies</p>
 			</div>
 		
 			<div class="card two">
 				<!-- <a class="card-link" href="#form"></a> -->
-				<p class="price">&dollar;28</p>
+				<p class="price">&dollar;28.00</p>
 				<img>
-				<p class="item-name">1 Tier Cake</p>
+				<p class="item-name">Single Layer Cake</p>
 			</div>
 	
 			<div class="card three">
 				<!-- <a class="card-link" href="#form"></a>		 -->
-				<p class="price">&dollar;18</p>
+				<p class="price">&dollar;26.00</p>
 				<img>
-				<p class="item-name">Cookie Bar</p>
+				<p class="item-name">A dozen single cookie bar box</p>
+			</div>
+			<div class="card four">
+				<!-- <a class="card-link" href="#form"></a>		 -->
+				<p class="price">&dollar;28.00</p>
+				<img>
+				<p class="item-name">A dozen assorted cookies</p>
+			</div>
+			<div class="card five">
+				<!-- <a class="card-link" href="#form"></a>		 -->
+				<p class="price">&dollar;35.00</p>
+				<img>
+				<p class="item-name">Double Layer Cake</p>
+			</div>
+			<div class="card six">
+				<!-- <a class="card-link" href="#form"></a>		 -->
+				<p class="price">&dollar;30.00</p>
+				<img>
+				<p class="item-name">A dozen assorted cookie bar box</p>
 			</div>
 			
 		</div>
@@ -89,7 +121,7 @@
 
 	</div>
 	<section id="about" class="about">
-		<h3>Order Form</h3>
+		<h3>Request a Order</h3>
 		<div id="form" class="form">
 			<form action="https://formspree.io/f/xdkoradd" method="POST">
 				<label class="form-small">
@@ -108,6 +140,41 @@
 					Delivery Date:
 					<input type="date" id="date" name="delivery-date">
 				</label>
+				<div class="options">
+					<label for="cookies">Choose a Cookie:</label>
+					<select id="cookies" name="cookies" size="1">
+						<option value="brown-butter-chocolate-chip">Brown Butter Chocolate Chip</option>
+						<option value="lemon-ricotta">Lemon Ricotta</option>
+						<option value="snickerdoodle">Snickerdoodle</option>
+						<option value="chocolate-crinkle">Chocolate Crinkle</option>
+						<option value="frosted-sugar-cookie">Frosted Sugar Cookie</option>
+						<option value="hazelnut-sandwich-cookie">Hazelnut Sandwich Cookie</option>
+						<option value="italian-almond-cherry">Italian Almond Cherry</option>
+						<option value="monthly-special-cookie">Monthly Special Cookie</option>
+						<option value="none">No Cookie</option>
+					</select>
+				</div>
+				<div class="options">
+					<label for="cakes">Choose a Cakes:</label>
+					<select id="cakes" name="cakes" size="1">
+						<option value="almond-cake">Almond Cake <span>&#x28;gluten free&#x29;</span></option>
+						<option value="olive-oil-cake">Olive Oil Cake <span>&#x28;can be gluten free&#x29;</span></option>
+						<option value="carrot-cake">Carrot Cake <span>&#x28;With cinnamon cream cheese frosting&#x29;</span></option>
+						<option value="chocolate-cake">Chocolate Cake<span>&#x28;with cream cheese frosting&#x29;</span></option>
+						<option value="special-cake">Special Cake Upon Request<span>&#x28;*place in comment box below&#x29;</span></option>
+						<option value="none">No Cake</option>
+					</select>
+				</div>
+				<div class="options">
+					<label for="bar">Choose a Cookie Bar:</label>
+					<select id="bar" name="bar" size="1">
+						<option value="brown-butter-chocolate-chip-bar">Brown Butter Chocolate Chip bars <span>With chocolate candies</span></option>
+						<option value="snickerdoodle-bar">Snickerdoodle bars <span>with cinnamon cream cheese frosting</span></option>
+						<option value="sugarcookie-bar">Sugar Cookie bars <span>with cream cheese frosting</span></option>
+						<option value="milliondollar-bar">Million Dollar bars <span>layered chocolate, caramel, cookie crust</span></option>
+						<option value="none">No Cookie Bar</option>
+					</select>
+				</div>
 				<label class="form-large">
 					Your order:
 					<textarea name="message"></textarea>

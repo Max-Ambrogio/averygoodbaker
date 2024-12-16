@@ -118,7 +118,7 @@ header{
 	border-radius: 30px;
 	border: 2px solid black;
 	border-radius: 25px;
-	height: 50vh;
+	height: 60vh;
 }
 .hero-video video {
 	position: absolute;
@@ -170,7 +170,7 @@ header{
 	position: relative;
 	background-size: cover;
 	z-index: 3;
-	margin-bottom: -185px!important;
+	margin-bottom: -155px!important;
 }
 
 
@@ -202,7 +202,8 @@ header{
 }
 .menu-items-container{
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 10px;
 	margin: 0px 40px;
 	/* margin-right: auto !important;
@@ -219,11 +220,11 @@ header{
 	font-family: "League Gothic", sans-serif;
 }
 .card{
-	width: 33%;
+	width: 32%;
 	background-color: #FFFFE2;
 	border: 1px solid black;
 	border-radius: 22px;
-	height: 50vh;
+	height: 40vh;
 	justify-content: space-between;
 	display: flex;
 	flex-direction: column;
@@ -234,7 +235,7 @@ header{
 
 
 .one{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 0.822) 100%),
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
 	url('/dist/images/avery-gallery-12.jpg') no-repeat;
 	/* background-image: url("./assets/images/avery-gallery-3.jpg") !important; */
 	background-position: center;
@@ -242,15 +243,36 @@ header{
 	background-repeat: no-repeat;
 }
 .two{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 0.822) 100%),
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
 	url('/dist/images/avery-gallery-4.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .three{
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 0.822) 100%),
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
 	url('/dist/images/avery-gallery-11.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.four{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
+	url('/dist/images/avery-gallery-2.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.five{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
+	url('/dist/images/avery-gallery-9.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.six{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
+	url('/dist/images/avery-gallery-3.jpg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -272,6 +294,7 @@ header{
 	color: #ffffff;
 	margin: 0px !important;
 	letter-spacing: 1px;
+	padding-bottom: 10px;
 
 }
 
@@ -301,7 +324,24 @@ header{
 	/* flex-direction: column; */
 	flex-wrap: wrap;
 	gap: 20px;
-	justify-content: center;
+	justify-content: start;
+}
+
+.options{
+	width: 100%;
+}
+.options label{
+	font-family: "League Gothic", sans-serif;
+	font-size: 22px !important;
+}
+.options select{
+	width: 100%;
+	font-family: "League Gothic", sans-serif;
+	font-size: 22px !important;
+}
+.options option{
+	font-family: "League Gothic", sans-serif;
+	font-size: 22px !important;
 }
 .form-small{
 	display: flex;
@@ -346,6 +386,7 @@ form button{
 	padding:12px 64px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ff4766;
+	width: 100%;
 }
 form button:hover{
 	background:linear-gradient(to bottom, #f0526c 5%, #ff5b76 100%);
@@ -472,6 +513,53 @@ footer{
 	padding-left: 10px;
 }
 
+/* styles.css */
+
+.slider-container {
+    max-width: 1200px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+	border-radius: 22px;
+}
+
+.slider {
+    display: flex;
+	width: calc(100% * 10);
+    height: 100%;
+	transition: transform 1s ease;
+}
+
+.slide {
+    flex: 1 0 100%; /* Each slide takes up 1/4 of the container's width */
+    background-size:20%;
+	/* background-repeat: no-repeat; */
+	height: 100%;
+    background-position: center center;
+    transition: background-image 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        height: 100%;
+    }
+	.slide {
+		flex: 1 0 200%; /* Each slide takes up 1/4 of the container's width */
+		background-size:15%;
+		/* background-repeat: no-repeat; */
+		height: 100%;
+		background-position: center bottom;
+		transition: background-image 1s ease-in-out;
+	}
+}
+
+@media (max-width: 480px) {
+    .slider-container {
+        height: 100%;
+    }
+}
+
+
 @media (max-width: 640px) {
 	.copyright{
 		display: flex;
@@ -508,10 +596,7 @@ footer{
 		margin: 0px 10px !important;
 		position: relative;
 	}
-	.hero-video{
-		height: 60vh;
-		border-radius: 28px;
-	}
+
 	.shop-all-btn{
 		margin-inline: auto; 
 		top: 85%;
@@ -591,14 +676,14 @@ footer{
 		margin-right: auto;
 		border-radius: 25px;
 		padding: 60px 40px;
-	
+		
 	}
 	.form form{
 		display: flex;
 		/* flex-direction: column; */
 		flex-wrap: wrap;
 		gap: 20px;
-		justify-content: center;
+		justify-content: start;
 	}
 	.form-small{
 		display: flex;
@@ -767,7 +852,7 @@ footer{
 		max-width: none !important;
 	}
 	.card{
-		width: 100% !important;
+		width: 32% !important;
 	}
 
 	.shop-all-btn{
@@ -777,7 +862,11 @@ footer{
 	}
 
 	.divider-lower{
-		margin-bottom: -184px !important;
+		margin-bottom: -115px !important;
+	}
+
+	.menu-items-container{
+		flex-wrap: wrap;
 	}
 
 }
