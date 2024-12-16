@@ -484,6 +484,7 @@ footer{
 		position: relative;
 	}
 	.header{
+		opacity: 0 !important;
 		justify-content: flex-end;
 		max-width: 640px !important;
 	}
