@@ -478,7 +478,8 @@ footer{
 		flex-direction: column;
 	}
 	.logo{
-		display: none;
+		display: block;
+		font-size: 20px !important;
 	}
 
 	.divider-lower{
@@ -491,8 +492,8 @@ footer{
 		position: relative;
 	}
 	.header{
-		opacity: 0 !important;
-		justify-content: flex-end;
+		opacity: 1 !important;
+		/* justify-content: flex-end; */
 		max-width: 640px !important;
 	}
 	.header .checkout{
@@ -509,6 +510,7 @@ footer{
 	}
 	.hero-video{
 		height: 60vh;
+		border-radius: 28px;
 	}
 	.shop-all-btn{
 		margin-inline: auto; 
@@ -756,6 +758,7 @@ footer{
 	.hero-video{
 		max-width: none!important;
 		height: 75vh !important;
+		
 	}
 	.header{
 		max-width: none !important;
