@@ -500,6 +500,7 @@ footer{
 		position: relative;
 	}
 	.hero-video{
+		height: 60vh;
 	}
 	.shop-all-btn{
 		margin-inline: auto; 
@@ -550,7 +551,8 @@ footer{
 	
 	.how-to-order img{
 		width: 65px;
-		padding-bottom: 20px;
+		padding-bottom: 5px;
+		padding-top: 20px;
 	}
 	
 	.icon-column{
@@ -564,6 +566,7 @@ footer{
 		font-size: 18px;
 		line-height: 25px;
 		font-weight: 600;
+		margin: 0px !important;
 	}
 	
 	.icon-column span{
@@ -664,7 +667,7 @@ footer{
 	
 	.img-left{
 		border-radius: 25px;
-		height: 25vh;
+		height: 45vh;
 		width: 100%;
 		/* background-color: bisque; */
 		background-image: url("/dist/images/avery-about.png");
