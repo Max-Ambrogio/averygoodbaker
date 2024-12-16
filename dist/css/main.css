@@ -1,0 +1,769 @@
+/*
+Theme Name: A very Good Theme
+Theme URI: https://wordpress.org/themes/twentytwentyfive/
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: A very Good Theme emphasizes simplicity and adaptability. It offers flexible design options, supported by a variety of patterns for different page types, such as services and landing pages, making it ideal for building personal blogs, professional portfolios, online magazines, or business websites. Its templates cater to various blog styles, from text-focused to image-heavy layouts. Additionally, it supports international typography and diverse color palettes, ensuring accessibility and customization for users worldwide.
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 7.2
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyfive
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+/*
+ * Link styles
+ * https://github.com/WordPress/gutenberg/issues/42319
+ */
+ 
+/*
+ * Progressive enhancement to reduce widows and orphans
+ * https://github.com/WordPress/gutenberg/issues/55190
+ */
+h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
+	text-wrap: pretty;
+	font-family: "Instrument Sans", sans-serif;
+}
+body{
+  margin: 0px !important;
+}
+a{
+	text-decoration: none !important;
+  font-family: "Instrument Sans", sans-serif;
+  color: #000000;
+}
+
+/*
+ * Change the position of the more block on the front, by making it a block level element.
+ * https://github.com/WordPress/gutenberg/issues/65934
+*/
+.more-link {
+	display: block;
+}
+html{
+	scroll-behavior: smooth !important;
+}
+main{
+	position: relative;
+	overflow: hidden;
+}
+body{
+	background-color: #FFFFE2 !important;
+}
+.logo{
+	font-size: 48px !important;
+	font-weight: 800;
+	letter-spacing: -2px;
+}
+
+header{
+	margin: 0px 70px !important;
+	max-width: 1200px !important;
+	position: relative;
+}
+.header{
+	border-radius: 25px;
+	background-color: #D9D9D9 !important;
+	border: 1px solid black;
+	position: absolute;
+	z-index: 4;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px !important;
+	align-items: center;
+	width: 100% !important;
+	height: 70px !important;
+	left: 0; 
+	right: 0; 
+	margin-inline: auto; 
+	width: fit-content;
+}	
+.hero{
+  padding-top: 20px;
+}
+
+.logo{
+	padding-left: 20px;
+}
+
+.header .checkout{
+	padding-right: 20px;
+}
+
+.header-links{
+	padding-left: 40px;
+	display: flex;
+	gap: 65px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.hero{
+	margin: 0px 70px !important;
+	position: relative;
+}
+
+
+.hero-video{
+	/* background-color: aquamarine; */
+	/* width: 100% !important; */
+	margin-left: auto !important;
+	margin-right: auto !important;
+	max-width: 1200px !important;
+	padding:0px !important;
+	position: relative;
+	border-radius: 30px;
+	border: 2px solid black;
+	border-radius: 25px;
+	height: 50vh;
+}
+.hero-video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	border-radius: 25px;
+}
+.shop-all-btn{
+	background-color: #FFBDD5;
+	border: 2px solid #FF5B76;
+	border-radius: 20px;
+	position: absolute;
+	top: 85%;
+	left: 40%;
+	right: 50%;
+	width: 168px;
+	padding: 10px 25px;
+	text-align: center;
+	font-size: 28px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.divider{
+	margin-top: 60px !important;
+	width: 100% !important;
+	
+	max-width: 100% !important;
+	padding:0px !important;
+	height: 20vh;
+	background-image: url(/dist/images/divider-01.png);
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.divider-lower{
+	
+	width: 100% !important;
+	margin: 0px !important;
+	max-width: 100% !important;
+	padding:0px !important;
+	height: 20vh;
+	background-image: url(/dist/images/divider-02.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	z-index: 3;
+	margin-bottom: -185px!important;
+}
+
+
+.divider-footer{
+	width: 100% !important;
+	margin: 0px !important;
+	max-width: 100% !important;
+	padding:0px !important;
+	height: 20vh;
+	background-image: url(/dist/images/divider-03.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	z-index: -2 !important;
+}
+.menu-container{
+	background-color: #FFBDD5;
+	width: 100% !important;
+	margin: 0px !important;
+	max-width: 100% !important;
+	padding:0px !important;
+	margin:-50px 0px !important;
+	text-align: center;
+	padding-bottom: 50px !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.menu-items-container{
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	margin: 0px 40px;
+	/* margin-right: auto !important;
+	margin-left: auto !important; */
+	max-width: 1200px !important;
+	
+}
+.card-link{
+	width: 100%;
+	cursor: pointer;
+	position: absolute;
+	height: 100%;
+	z-index: 2;
+	font-family: "League Gothic", sans-serif;
+}
+.card{
+	width: 33%;
+	background-color: #FFFFE2;
+	border: 1px solid black;
+	border-radius: 22px;
+	height: 50vh;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	position: relative;
+}
+
+
+
+.one{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 0.822) 100%),
+	url('/dist/images/avery-gallery-12.jpg') no-repeat;
+	/* background-image: url("./assets/images/avery-gallery-3.jpg") !important; */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.two{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 0.822) 100%),
+	url('/dist/images/avery-gallery-4.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.three{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 0.822) 100%),
+	url('/dist/images/avery-gallery-11.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card .price{
+	font-family: "League Gothic", sans-serif;
+	align-self: end;
+	rotate: 17.9deg;
+	font-size: 36px;
+	padding-right: 20px;
+	color: #ffffff;
+	margin: 10px 0px 0px 0px!important;
+}
+.card .item-name{
+	align-self: center;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: "League Gothic", sans-serif;
+	color: #ffffff;
+	margin: 0px !important;
+	letter-spacing: 1px;
+
+}
+
+.about{
+	background-color: #FF5B76;
+	width: 100% !important;
+	margin: 0px !important;
+	max-width: 100% !important;
+	padding:0px !important;
+	padding-top: 160px !important;
+	padding-bottom: 70px !important;
+	margin-bottom: 70px;
+	position: relative;
+	z-index: 2;
+}
+.form{
+	max-width: 600px;
+	background-color: #FFFFE2;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+	padding: 60px 40px;
+
+}
+.form form{
+	display: flex;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+.form-small{
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	font-family: "League Gothic", sans-serif;
+	letter-spacing: 1px;
+	margin-top: 1px !important;
+}
+.form-large{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-family: "League Gothic", sans-serif;
+	letter-spacing: 1px;
+}
+.form-large textarea{
+	height: 200px;
+	font-family: "League Gothic", sans-serif;
+	letter-spacing: 1px;
+	margin-top: 1px;
+}
+
+form input{
+	font-family: "League Gothic", sans-serif;
+	font-size: 22px !important;
+}
+
+form button{
+	box-shadow:inset 0px 1px 0px 0px #ff5b76;
+	background:linear-gradient(to bottom, #ff5b76 5%, #f0526c 100%);
+	background-color:#ff5b76;
+	border-radius:6px;
+	border:1px solid #ff5975;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family: "Instrument Sans", sans-serif;
+	font-size:19px;
+	font-weight:bold;
+	letter-spacing: -1px;
+	padding:12px 64px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ff4766;
+}
+form button:hover{
+	background:linear-gradient(to bottom, #f0526c 5%, #ff5b76 100%);
+	background-color:#f0526c;
+}
+.instagram{
+	padding-top: 80px;
+}
+.about h3{
+	font-size: 48px;
+	font-weight: 600;
+	color: #FFFFE2;
+	text-align: center;
+	margin-bottom: 0px !important;
+}
+
+.about h2{
+	font-size: 64px;
+	font-weight: bold;
+	margin-left: 75px;
+	color: white;
+}
+.about-container{
+	display: flex;
+	margin-top: -50px;
+	margin-left: 70px;
+	gap: 40px;
+}
+
+.img-left{
+	border-radius: 25px;
+	height: 55vh;
+	width: 50%;
+	/* background-color: bisque; */
+	background-image: url("/dist/images/avery-about.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.about-copy{
+	width: 50%;
+	display: flex;
+	align-content: center;
+	align-content: center;
+	margin-right: 70px;
+}
+.about-copy p{
+	align-content: center;
+	color: white;
+}
+
+.how-to-order-container{
+	margin: 0px 70px;
+	margin-top: 70px
+}
+.how-to-order{
+	display: flex;
+	gap: 40px;
+	padding-top: 40px
+}
+
+.how-to-order img{
+	width: 65px;
+	padding-bottom: 20px;
+}
+
+.icon-column{
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.icon-column p{
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 600;
+}
+
+.icon-column span{
+	font-size: 12px;
+	font-weight: 400;
+}
+
+footer{
+	max-width: 1200px !important;
+	margin: auto !important;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.footer-content{
+	margin: 0px 70px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: flex-start;
+	background-color: #D9D9D9;
+	border: 2px solid black;
+	border-radius: 25px;
+	padding: 20px 40px
+}
+
+.footer-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-logo{
+	font-size: 48px !important;
+	font-weight: 800;
+	letter-spacing: -2px;
+	padding: 0px !important;
+}
+
+.footer-links{
+	display: flex;
+	gap: 40px;
+	font-weight: 600;
+}
+
+
+@media (max-width: 640px) {
+	.logo{
+		display: none;
+	}
+
+	.divider-lower{
+		margin-bottom: -145px !important;
+	}
+	
+	header{
+		margin: 0px 20px !important;
+		max-width: 640px !important;
+		position: relative;
+	}
+	.header{
+		justify-content: flex-end;
+		max-width: 640px !important;
+	}
+	.header .checkout{
+		padding-right: 15px;
+	}
+	
+	.header-links{
+		display: none;
+	}
+	
+	.hero{
+		margin: 0px 10px !important;
+		position: relative;
+	}
+	.hero-video{
+	}
+	.shop-all-btn{
+		margin-inline: auto; 
+		top: 85%;
+		left:0;
+		right: 0;
+	}
+
+	.shop-link{
+		cursor: pointer;
+	}
+	
+	.menu-container{
+		background-color: #FFBDD5;
+		width: 100% !important;
+		margin: 0px !important;
+		max-width: 100% !important;
+		padding:0px !important;
+		margin:-50px 0px !important;
+		text-align: center;
+		padding-bottom: 50px !important;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.menu-items-container{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		margin: 0px 15px;
+		
+	}
+
+	.card{
+		width: 100%;
+		height: 35vh;
+	}
+
+	.how-to-order-container{
+		margin: 0px 20px;
+		margin-top: 70px
+	}
+	.how-to-order{
+		flex-direction: column;
+		gap: 40px;
+		padding-top: 40px
+	}
+	
+	.how-to-order img{
+		width: 65px;
+		padding-bottom: 20px;
+	}
+	
+	.icon-column{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.icon-column p{
+		font-size: 18px;
+		line-height: 25px;
+		font-weight: 600;
+	}
+	
+	.icon-column span{
+		font-size: 12px;
+		font-weight: 400;
+	}
+
+	.form{
+		max-width: 600px;
+		background-color: #FFFFE2;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 25px;
+		padding: 60px 40px;
+	
+	}
+	.form form{
+		display: flex;
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+		gap: 20px;
+		justify-content: center;
+	}
+	.form-small{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		font-family: "League Gothic", sans-serif;
+		letter-spacing: 1px;
+		margin-top: 1px !important;
+		margin-bottom: 1px !important;
+	}
+	.form-large{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		font-family: "League Gothic", sans-serif;
+		letter-spacing: 1px;
+	}
+	.form-large textarea{
+		height: 200px;
+		font-family: "League Gothic", sans-serif;
+		letter-spacing: 1px;
+		margin-top: 1px;
+	}
+	
+	form input{
+		font-family: "League Gothic", sans-serif;
+		font-size: 22px !important;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+	
+	form button{
+		box-shadow:inset 0px 1px 0px 0px #ff5b76;
+		background:linear-gradient(to bottom, #ff5b76 5%, #f0526c 100%);
+		background-color:#ff5b76;
+		border-radius:6px;
+		border:1px solid #ff5975;
+		display:inline-block;
+		cursor:pointer;
+		color:#000000;
+		font-family: "Instrument Sans", sans-serif;
+		font-size:19px;
+		font-weight:bold;
+		letter-spacing: -1px;
+		padding:12px 64px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #ff4766;
+	}
+	form button:hover{
+		background:linear-gradient(to bottom, #f0526c 5%, #ff5b76 100%);
+		background-color:#f0526c;
+	}
+	.instagram{
+		padding-top: 80px;
+	}
+	.about h3{
+		font-size: 36px;
+		font-weight: 600;
+		color: #FFFFE2;
+		text-align: center;
+		margin-bottom: 0px !important;
+	}
+	
+	.about h2{
+		font-size: 36px;
+		font-weight: bold;
+		margin-left: 20px;
+		color: white;
+	}
+	.about-container{
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin: 0px 20px !important;
+	}
+	
+	.img-left{
+		border-radius: 25px;
+		height: 25vh;
+		width: 100%;
+		/* background-color: bisque; */
+		background-image: url("/dist/images/avery-about.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.about-copy{
+		width: 100%;
+		display: flex;
+		align-content: center;
+		align-content: center;
+		margin-right: 0px;
+	}
+	.about-copy p{
+		align-content: center;
+		color: white;
+	}
+	
+	
+	
+	footer{
+		max-width: 1200px !important;
+		margin: auto !important;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	
+	.footer-content{
+		margin: 0px 20px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		justify-content: flex-start;
+		background-color: #D9D9D9;
+		border: 2px solid black;
+		border-radius: 25px;
+		padding: 20px 40px
+	}
+	
+	.footer-menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.footer-logo{
+		font-size: 24px !important;
+		font-weight: 800;
+		letter-spacing: -2px;
+		padding: 0px !important;
+		width: 100%;
+	}
+
+	.footer-links{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		text-align: center;
+		padding: 20px 0px;
+	}
+	
+	.footer-menu div{
+		display: flex;
+		gap: 40px;
+	}
+
+	.footer-shop{
+		display: none;
+	}
+	
+}
+
+
+@media (min-width: 1400px) {
+
+	.hero-video{
+		max-width: none!important;
+		height: 75vh !important;
+	}
+	.header{
+		max-width: none !important;
+	}
+	.menu-items-container{
+		max-width: none !important;
+	}
+	.card{
+		width: 100% !important;
+	}
+
+	.shop-all-btn{
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.divider-lower{
+		margin-bottom: -184px !important;
+	}
+
+}

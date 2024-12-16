@@ -1,0 +1,19 @@
+{
+	"name": "portfolio site",
+	"version": "1.0.0",
+	"description": "A Node.js application deployed on Netlify",
+	"main": "index.js",
+	"scripts": {
+	  "start": "node index.js",
+	  "build": "echo 'No build step required'",
+	  "dev": "nodemon index.js"
+	},
+	"author": "Your Name",
+	"license": "MIT",
+	"dependencies": {
+	  "express": "^4.17.1"
+	},
+	"devDependencies": {
+	  "nodemon": "^2.0.15"
+	}
+  }
