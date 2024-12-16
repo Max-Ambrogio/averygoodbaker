@@ -516,7 +516,7 @@ footer{
 /* styles.css */
 
 .slider-container {
-    max-width: 1200px;
+    max-width: none;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -849,10 +849,14 @@ footer{
 		max-width: none !important;
 	}
 	.menu-items-container{
-		max-width: none !important;
+		max-width: 1400px !important;
 	}
 	.card{
 		width: 32% !important;
+	}
+
+	.slide{
+		width: 100%;
 	}
 
 	.shop-all-btn{
@@ -867,6 +871,7 @@ footer{
 
 	.menu-items-container{
 		flex-wrap: wrap;
+		align-self: center;
 	}
 
 }
