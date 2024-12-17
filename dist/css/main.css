@@ -1850,7 +1850,11 @@ footer{
 		border-radius: 0px 0px 0px 0px;
 	}
 	.csslider1 img{
-		height: 30vh;
+		width: 200% !important;
+		transform-origin: left 50%;
+	}
+	.csslider1 > ul{
+		height: max-content !important;
 	}
 }
 
