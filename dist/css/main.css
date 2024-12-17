@@ -1380,6 +1380,7 @@ header{
 	left: 0; 
 	right: 0; 
 	margin-inline: auto; 
+	visibility: hidden;
 }	
 .hero{
   padding-top: 20px;
@@ -1446,6 +1447,7 @@ header{
 	font-size: 28px;
 	text-decoration: none;
 	cursor: pointer;
+	visibility: hidden;
 }
 .divider{
 	margin-top: 60px !important;
