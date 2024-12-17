@@ -27,208 +27,61 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 8000); // 5000ms interval
 });
 
-// if (document.body.classList.contains('page-home')) {
 
-//     const videoOne = document.querySelector('#webdev video')
-//     const videoTwo = document.querySelector('#ct')
-//     const videoThree = document.querySelector('#renders')
-//     const videoFour = document.querySelector('#video-p')
-        
-//     var homeRenders = gsap.timeline({paused: true, duration: 24});
+    gsap.from('.header' , {
+        opacity: 0,
+        y:50,
+        ease: 'power3.out',
+        duration:3,
+        autoAlpha: 0,
+        delay: 0,
+    })
 
-//     window.addEventListener('scroll', e => {
-//         // console.log(window.scrollY, document.body.scrollHeight)
-
-//         homeRenders.progress(window.scrollY / document.body.scrollHeight)
-//     })
-
-//     let timelineStartPad = 1;
-
-//     // var hoverAnimation = new hoverEffect({
-//     //     parent: document.querySelector(".screen-one"),
-//     //     intensity: 0.2,
-//     //     // angle2: Math.PI / 2,
-//     //     image1:'dist/img/profile-one.jpg',
-//     //     image2:'dist/img/hero-max.png',
-//     //     displacementImage: './dist/img/displacement-one.jpg',
-//     // });
-
-//     var hoverAnimation2 = new hoverEffect({
-//         parent: document.querySelector(".screen-two"),
-//         intensity: 0.2,
-//         angle2: Math.PI / 4,
-//         image1:'dist/img/profile-4.png',
-//         image2:'dist/img/profile-three.jpg',
-//         displacementImage: './dist/img/heightMap.png',
-//     });
+    gsap.from('.shop-all-btn' , {
+        opacity: 0,
+        y:50,
+        ease: 'power3.out',
+        duration:3,
+        autoAlpha: 0,
+        delay: 0.5,
+    })
+    gsap.from('.menu-items-container' , {
+        opacity: 0,
+        y:50,
+        ease: 'power3.out',
+        duration:3,
+        autoAlpha: 0,
+        delay: 0.5,
+    })
 
 
-//     // videoOne.onloadeddata = function() {
-//     //     homeRenders.to(videoOne, {
-//     //         duration: 4,
-//     //         currentTime:2,
-//     //         ease: Quad.easeOut,
-//     //         overwrite: true, 
-//     //         pause: true
-//     //     }, 2 + timelineStartPad)
-//     // }
-
-//     // videoTwo.onloadeddata = function() {
-//     //     homeRenders.to(videoTwo, {
-//     //         duration: 4,
-//     //         currentTime: 2,
-//     //         ease: Quad.easeOut,
-//     //         overwrite: true, 
-//     //         pause: true
-//     //     }, 8 + timelineStartPad)
-//     // }
-
-//     // videoThree.onloadeddata = function() {
-//     //     homeRenders.to(videoThree, {
-//     //         duration: 10,
-//     //         currentTime: 2,
-//     //         ease: Quad.easeOut,
-//     //         overwrite: true, 
-//     //         pause: true
-//     //     }, 12 + timelineStartPad)
-//     // }
-
-//     // videoFour.onloadeddata = function() {
-//     //     homeRenders.to(videoFour, {
-//     //         duration: 8,
-//     //         currentTime: 2,
-//     //         ease: Quad.easeOut,
-//     //         overwrite: true, 
-//     //         pause: true
-//     //     }, 16 + timelineStartPad)
-//     // }  
-
-//     gsap.from('.hero h1' , {
-//         opacity: 0,
-//         y:-50,
-//         ease: 'power3.out',
-//         duration:3,
-//         autoAlpha: 0,
-//         delay: 0,
-//     })
-//     gsap.from('.hero h2' , {
-//         opacity: 0,
-//         autoAlpha: 0,
-//         y:-40,
-//         ease: 'power3.out',
-//         duration:2,
-//         delay: 0.5,
-//     })
-//     gsap.from('.hero .accent-one' , {
-//         opacity: 0,
-//         autoAlpha: 0,
-//         x:80,
-//         ease: 'power3.out',
-//         duration:2,
-//         delay: 0.5,
-//     })
-//     gsap.from('.hero .accent-two' , {
-//         opacity: 0,
-//         autoAlpha: 0,
-//         y:-60,
-//         ease: 'power3.out',
-//         duration:2,
-//         delay: 1,
-//     })
-//     gsap.from('.hero .screen-one' , {
-//         opacity: 0,
-//         autoAlpha: 0,
-//         x:-60,
-//         ease: 'power3.out',
-//         duration:2,
-//         delay: 0.1,
-//     })
-//     gsap.from('.hero .screen-two' , {
-//         opacity: 0,
-//         x:60,
-//         autoAlpha: 0,
-//         ease: 'power3.out',
-//         duration:2,
-//         delay: 0.1,
-//     })
-
-//     gsap.to('.scramble',{
-//         duration:2,
-//         autoAlpha: 0,
-//         scrambleText:{
-//             delimiter:"",
-//             revealDelay:0.9,
-//             chars:"01",
-//             speed:0.1,
-//             // tweenLength: true,
-//             text: "{original}",
-//         }
-//     })
-//     gsap.to('.scramble-two',{
-//         // delay:1,
-//         duration:4,
-//         autoAlpha: 0,
-//         scrambleText:{
-//             chars:"01",
-//             revealDelay:0.7,
-//             speed:1,
-//             tweenLength: false,
-//             text: "{original}",
-//         }
-//     })
-//     gsap.to('.scarmble-three',{
-//         // delay:1,
-//         duration:6,
-//         // autoAlpha: 0,
-//         scrambleText:{
-//             chars:"01",
-//             revealDelay:0.9,
-//             speed:1,
-//             tweenLength: false,
-//             text: "{original}",
-//         }
-//     })
-//     gsap.to('.scramble-four',{
-//         // delay:1,
-//         duration:12,
-//         // autoAlpha: 0,
-//         scrambleText:{
-//             chars:"01",
-//             revealDelay:0.7,
-//             speed:1,
-//             tweenLength: false,
-//             text: "{original}",
-//         }
-//     })
-//     gsap.from('.about p',{
-//         delay:0.5,
-//         autoAlpha: 0,
-//         opacity:0,
-//         scrollTrigger: ".about",
-//         y:-50,
-//         ease: 'power3.out',
-//         duration:3,
-//         stagger:1,
-//     })
-// }
-// gsap.from('.about-pages h1',{
-//     // delay:1,
-//     opacity:0,
-//     scrollTrigger: ".about-pages",
-//     y:-50,
-//     ease: 'power3.out',
-//     duration:3,
-//     stagger:2,
-// })
-// gsap.from('.about-pages p',{
-//     delay:0.5,
-//     opacity:0,
-//     scrollTrigger: ".about-pages",
-//     y:-50,
-//     ease: 'power3.out',
-//     duration:1.5,
-//     stagger:2,
-// })
+gsap.from('.menu-items-container .card',{
+    delay:0.5,
+    opacity:0,
+    scrollTrigger: ".menu-items-container",
+    y:-50,
+    ease: 'power3.out',
+    duration:1.5,
+    stagger:.5,
+})
+gsap.from('.how-to-order .icon-column',{
+    delay:0.5,
+    opacity:0,
+    scrollTrigger: ".how-to-order",
+    y:-20,
+    ease: 'power3.out',
+    duration:1.5,
+    stagger:.5,
+})
+gsap.from('.about-copy p',{
+    delay:0.5,
+    opacity:0,
+    scrollTrigger: ".about-container",
+    y:-20,
+    ease: 'power3.out',
+    duration:1.5,
+    stagger:.5,
+})
 
 // if (document.body.classList.contains('page-webdev')){
 

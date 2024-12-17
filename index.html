@@ -27,24 +27,65 @@
 			
 		</div>
 		<div class="hero-video">
-			<div class="slider-container">
-				<div class="slider">
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 0.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 1.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 2.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 3.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 4.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 5.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 6.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 7.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 8.png');"></div>
-					<div class="slide" style="background-image: url('/dist/images/Layer\ 9.png');"></div>
+			<div class='csslider1 autoplay '>
+				<input name="cs_anchor1" id='cs_slide1_0' type="radio" class='cs_anchor slide' >
+				<input name="cs_anchor1" id='cs_slide1_1' type="radio" class='cs_anchor slide' >
+				<input name="cs_anchor1" id='cs_slide1_2' type="radio" class='cs_anchor slide' >
+				<input name="cs_anchor1" id='cs_play1' type="radio" class='cs_anchor' checked>
+				<input name="cs_anchor1" id='cs_pause1' type="radio" class='cs_anchor' >
+				<ul>
+					<div style="width: 100%; visibility: hidden; font-size: 0px; line-height: 0;">
+						<img src="http://cssslider.com/sliders/pen/images/buns.jpg" style="width: 100%;">
+					</div>
+					<li class='num0 img'>
+						 <a href="#how-to-order" target=""><img src='./dist/images/Layer 0.png' alt='Buns' title='Cookies' /> </a> 
+					</li>
+					<li class='num1 img'>
+						 <a href="#how-to-order" target=""><img src='./dist/images/Layer 1.png' alt='Croissant' title='Croissant' /> </a> 
+					</li>
+					<li class='num2 img'>
+						 <a href="#how-to-order" target=""><img src='./dist/images/Layer 2.png' alt='Lemon pie' title='Lemon pie' /> </a> 
+					</li>
+				
+				</ul>
+				<div class='cs_description'>
+					<label class='num0'>
+						<span class="cs_title"><span class="cs_wrapper">Cakes</span></span>
+					</label>
+					<label class='num1'>
+						<span class="cs_title"><span class="cs_wrapper">Cookies</span></span>
+					</label>
+					<label class='num2'>
+						<span class="cs_title"><span class="cs_wrapper">Cookie Box's</span></span>
+					</label>
 				</div>
-			</div>
-			<!-- <video playsinline muted autoplay loop preload="auto">
-				<source src="./dist/images/avery-hero.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video> -->
+				
+				<div class='cs_arrowprev'>
+					<label class='num0' for='cs_slide1_0'></label>
+					<label class='num1' for='cs_slide1_1'></label>
+					<label class='num2' for='cs_slide1_2'></label>
+				</div>
+				<div class='cs_arrownext'>
+					<label class='num0' for='cs_slide1_0'></label>
+					<label class='num1' for='cs_slide1_1'></label>
+					<label class='num2' for='cs_slide1_2'></label>
+				</div>
+				
+				<div class='cs_bullets'>
+					<label class='num0' for='cs_slide1_0'>
+						<span class='cs_point'></span>
+						<span class='cs_thumb'><img src='http://cssslider.com/sliders/pen/tooltips/buns.jpg' alt='Buns' title='Buns' /></span>
+					</label>
+					<label class='num1' for='cs_slide1_1'>
+						<span class='cs_point'></span>
+						<span class='cs_thumb'><img src='http://cssslider.com/sliders/pen/tooltips/croissant.jpg' alt='Croissant' title='Croissant' /></span>
+					</label>
+					<label class='num2' for='cs_slide1_2'>
+						<span class='cs_point'></span>
+						<span class='cs_thumb'><img src='http://cssslider.com/sliders/pen/tooltips/lemonpie.jpg' alt='Lemon pie' title='Lemon pie' /></span>
+					</label>
+				</div>
+				</div>
 			<a href="#form" class="shop-all-btn">Shop All</a>
 		</div>
 	</section>
@@ -143,6 +184,7 @@
 				<div class="options">
 					<label for="cookies">Choose a Cookie:</label>
 					<select id="cookies" name="cookies" size="1">
+						<option value="none">No Cookie</option>
 						<option value="brown-butter-chocolate-chip">Brown Butter Chocolate Chip</option>
 						<option value="lemon-ricotta">Lemon Ricotta</option>
 						<option value="snickerdoodle">Snickerdoodle</option>
@@ -151,28 +193,28 @@
 						<option value="hazelnut-sandwich-cookie">Hazelnut Sandwich Cookie</option>
 						<option value="italian-almond-cherry">Italian Almond Cherry</option>
 						<option value="monthly-special-cookie">Monthly Special Cookie</option>
-						<option value="none">No Cookie</option>
 					</select>
 				</div>
 				<div class="options">
 					<label for="cakes">Choose a Cakes:</label>
 					<select id="cakes" name="cakes" size="1">
-						<option value="almond-cake">Almond Cake <span>&#x28;gluten free&#x29;</span></option>
-						<option value="olive-oil-cake">Olive Oil Cake <span>&#x28;can be gluten free&#x29;</span></option>
-						<option value="carrot-cake">Carrot Cake <span>&#x28;With cinnamon cream cheese frosting&#x29;</span></option>
-						<option value="chocolate-cake">Chocolate Cake<span>&#x28;with cream cheese frosting&#x29;</span></option>
-						<option value="special-cake">Special Cake Upon Request<span>&#x28;*place in comment box below&#x29;</span></option>
 						<option value="none">No Cake</option>
+						<option value="almond-cake">Almond Cake &#x28;gluten free&#x29;</option>
+						<option value="olive-oil-cake">Olive Oil Cake &#x28;can be gluten free&#x29;</option>
+						<option value="carrot-cake">Carrot Cake &#x28;With cinnamon cream cheese frosting&#x29;</option>
+						<option value="chocolate-cake">Chocolate Cak &#x28;with cream cheese frosting&#x29;</option>
+						<option value="special-cake">Special Cake Upon Reques &#x28;*place in comment box below&#x29;</option>
+						<option value="special-cake">Mini Bundt Cake</option>
 					</select>
 				</div>
 				<div class="options">
-					<label for="bar">Choose a Cookie Bar:</label>
+					<label for="bar">Choose a Cookie Box:</label>
 					<select id="bar" name="bar" size="1">
-						<option value="brown-butter-chocolate-chip-bar">Brown Butter Chocolate Chip bars <span>With chocolate candies</span></option>
-						<option value="snickerdoodle-bar">Snickerdoodle bars <span>with cinnamon cream cheese frosting</span></option>
-						<option value="sugarcookie-bar">Sugar Cookie bars <span>with cream cheese frosting</span></option>
-						<option value="milliondollar-bar">Million Dollar bars <span>layered chocolate, caramel, cookie crust</span></option>
-						<option value="none">No Cookie Bar</option>
+						<option value="none">No Cookie Box</option>
+						<option value="brown-butter-chocolate-chip-bar">Brown Butter Chocolate Chip bars With chocolate candies</option>
+						<option value="snickerdoodle-bar">Snickerdoodle bars with cinnamon cream cheese frosting</option>
+						<option value="sugarcookie-bar">Sugar Cookie bars with cream cheese frosting</option>
+						<option value="milliondollar-bar">Million Dollar bars layered chocolate, caramel, cookie crust</option>
 					</select>
 				</div>
 				<label class="form-large">
