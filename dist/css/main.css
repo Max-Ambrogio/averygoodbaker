@@ -53,7 +53,7 @@ a{
 	display: inline-block;
 	position: relative;
 	max-width: 1200px;
-	height: 100%;
+	height: 80vh;
 	border-radius: 22px;
 	width: 100%;
 	overflow: hidden;
@@ -1421,6 +1421,8 @@ header{
 	border: 2px solid black;
 	border-radius: 25px;
 	height: 60vh;
+	overflow: hidden;
+	align-content: center;
 }
 .hero-video video {
 	position: absolute;
@@ -1841,25 +1843,19 @@ footer{
     transition: background-image 1s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .slider-container {
-        height: 100%;
-    }
-	.slide {
-		flex: 1 0 200%; /* Each slide takes up 1/4 of the container's width */
-		background-size:15%;
-		/* background-repeat: no-repeat; */
-		height: 100%;
-		background-position: center bottom;
-		transition: background-image 1s ease-in-out;
+@media (max-width: 640px) {
+	.csslider1 {
+		position: relative;
+		height: auto;
+		border-radius: 22px;
+		overflow: hidden;
+		border-radius: 0px 0px 21px 21px;
+	}
+	.csslider1 img{
+		height: 30vh;
 	}
 }
 
-@media (max-width: 480px) {
-    .slider-container {
-        height: 100%;
-    }
-}
 
 
 @media (max-width: 640px) {
@@ -1885,6 +1881,8 @@ footer{
 		opacity: 1 !important;
 		/* justify-content: flex-end; */
 		max-width: 640px !important;
+		position: relative;
+		border-radius: 22px 22px 0px 0px;
 	}
 	.header .checkout{
 		padding-right: 15px;
@@ -1901,7 +1899,7 @@ footer{
 
 	.shop-all-btn{
 		margin-inline: auto; 
-		top: 85%;
+		top: 75%;
 		left:0;
 		right: 0;
 	}
@@ -1928,7 +1926,11 @@ footer{
 		flex-direction: column;
 		gap: 10px;
 		margin: 0px 15px;
-		
+	}
+
+	.hero-video{
+		height: 30vh;
+		border-radius: 0px 0px 22px 22px;
 	}
 
 	.card{
