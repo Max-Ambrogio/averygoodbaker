@@ -549,7 +549,6 @@ footer{
 	}
 	.hero-container{
 		height: 40vh;
-		z-index: -1;
 		transform: translateY(0px);
 	}
 	.header{
