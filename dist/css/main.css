@@ -591,11 +591,19 @@ footer{
 		position: relative;
 	}
 
+	
+	.gallery-wrap {
+		height: 30vh;
+		flex-direction: row;
+	}
+
 	.shop-all-btn{
 		margin-inline: auto; 
 		top: 75%;
-		left:0;
-		right: 0;
+		left:50;
+		right: 50;
+		width: 60px;
+		font-size: 14px;
 	}
 
 	.shop-link{
