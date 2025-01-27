@@ -100,6 +100,7 @@ body{
 	height: 60vh;
 	overflow: hidden;
 	align-content: center;
+	position: relative;
 }
 
 .gallery-wrap {
@@ -585,6 +586,7 @@ footer{
 	.shop-all-btn{
 		font-size: 14px;
 		z-index: 4;
+		top: 80%;
 	}
 
 	.shop-link{
