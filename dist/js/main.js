@@ -56,14 +56,6 @@ gsap.from('.about-copy p',{
 })
 
 
-// Disable scrolling.
-document.ontouchmove = function (e) {
-    e.preventDefault();
-  }
-  
-  // Enable scrolling.
-  document.ontouchmove = function (e) {
-    return true;
-  }
+
 
 });

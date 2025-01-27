@@ -27,12 +27,10 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 	text-wrap: pretty;
 	font-family: "Instrument Sans", sans-serif;
 }
-html{
-  overflow: hidden !important;
-}
+
 body{
   margin: 0px !important;
-  overflow: hidden !important;
+
 }
 main{
 	overflow: hidden !important;
