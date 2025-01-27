@@ -109,7 +109,7 @@ header{
 	/* width: 100% !important; */
 	margin-left: auto !important;
 	margin-right: auto !important;
-	max-width: 1200px !important;
+	max-width: 1400px !important;
 	padding:0px !important;
 	position: relative;
 	border-radius: 30px;
@@ -119,24 +119,56 @@ header{
 	overflow: hidden;
 	align-content: center;
 }
-.hero-video video {
-	position: absolute;
-	top: 0;
-	left: 0;
+
+.gallery-wrap {
+	display: flex;
+	flex-direction: row;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: -1;
-	border-radius: 25px;
+	height: 80vh;
 }
+  
+.item {
+	flex: 1;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	transition: flex 0.8s ease;
+	
+	&:hover{
+	  flex: 7;
+	}
+  }
+  
+  .item-1 { 
+	background-image: url('/dist/images/avery-gallery-1.jpg');
+  }
+  
+  .item-2 { 
+	background-image: url('/dist/images/avery-gallery-2.jpg');
+  }
+  
+  .item-3 { 
+	background-image: url('/dist/images/avery-gallery-3.jpg');
+  }
+  
+  .item-4 { 
+	background-image: url('/dist/images/avery-gallery-4.jpg');
+  }
+  
+  .item-5 { 
+	background-image: url('/dist/images/avery-gallery-5.jpg');
+  }
+
 .shop-all-btn{
 	background-color: #FFBDD5;
 	border: 2px solid #FF5B76;
 	border-radius: 20px;
 	position: absolute;
 	top: 85%;
-	left: 40%;
+	left: 50%;
 	right: 50%;
+	transform: translate(-50% , -50%) !important;
 	width: 168px;
 	padding: 10px 25px;
 	text-align: center;
@@ -170,7 +202,7 @@ header{
 	position: relative;
 	background-size: cover;
 	z-index: 3;
-	margin-bottom: -155px!important;
+	/* margin-bottom: -155px!important; */
 }
 
 
@@ -273,6 +305,13 @@ header{
 .six{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
 	url('/dist/images/avery-gallery-3.jpg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.seven{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
+	url('/dist/images/mini-bundt.png') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -439,8 +478,7 @@ form button:hover{
 }
 
 .how-to-order-container{
-	margin: 0px 70px;
-	margin-top: 70px
+	margin: 70px 70px;
 }
 .how-to-order{
 	display: flex;
@@ -513,50 +551,6 @@ footer{
 	padding-left: 10px;
 }
 
-/* styles.css */
-
-.slider-container {
-    max-width: none;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-	border-radius: 22px;
-}
-
-.slider {
-    display: flex;
-	width: calc(100% * 10);
-    height: 100%;
-	transition: transform 1s ease;
-}
-
-.slide {
-    flex: 1 0 100%; /* Each slide takes up 1/4 of the container's width */
-    background-size:20%;
-	/* background-repeat: no-repeat; */
-	height: 100%;
-    background-position: center center;
-    transition: background-image 1s ease-in-out;
-}
-
-@media (max-width: 640px) {
-	.csslider1 {
-		position: relative;
-		height: auto;
-		border-radius: 22px;
-		overflow: hidden;
-		border-radius: 0px 0px 0px 0px;
-	}
-	.csslider1 img{
-		width: 200% !important;
-		transform-origin: left 50%;
-	}
-	.csslider1 > ul{
-		height: max-content !important;
-	}
-}
-
-
 
 @media (max-width: 640px) {
 	.copyright{
@@ -569,7 +563,7 @@ footer{
 	}
 
 	.divider-lower{
-		margin-bottom: -145px !important;
+		/* margin-bottom: -145px !important; */
 	}
 	
 	header{
@@ -872,7 +866,7 @@ footer{
 	}
 
 	.divider-lower{
-		margin-bottom: -115px !important;
+		/* margin-bottom: -115px !important; */
 	}
 
 	.menu-items-container{

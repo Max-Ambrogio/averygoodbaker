@@ -1,13 +1,3 @@
-
-// // create the smooth scroller FIRST!
-
-window.onload = function () {
-    var element = document.getElementById('video');
-    element.muted = "muted";
-}
-
-// script.js
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
 
     gsap.from('.header' , {
