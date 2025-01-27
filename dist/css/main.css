@@ -87,18 +87,13 @@ body{
 .hero-container{
 	position: relative;
 	height: 60vh;
-	/* z-index: ; */
 	transform: translateY(-50px);
 }
 .hero-video{
-	/* background-color: aquamarine; */
-	/* width: 100% !important; */
 	margin-left: auto !important;
 	margin-right: auto !important;
 	width: 100%;
-	/* max-width: 1400px !important; */
 	padding:0px !important;
-	position: absolute;
 	border-radius: 30px;
 	border: 2px solid black;
 	border-radius: 25px;
@@ -152,7 +147,7 @@ body{
 	border: 2px solid #FF5B76;
 	border-radius: 20px;
 	position: absolute;
-	top: 85%;
+	top: 100%;
 	left: 50%;
 	right: 50%;
 	transform: translate(-50% , -50%) !important;
@@ -553,9 +548,9 @@ footer{
 		/* margin-bottom: -145px !important; */
 	}
 	.hero-container{
-		height: 30vh;
+		height: 40vh;
 		z-index: -1;
-		transform: translateY(-10px);
+		transform: translateY(0px);
 	}
 	.header{
 		opacity: 1 !important;
