@@ -273,7 +273,7 @@ body{
 }
 .four{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
-	url('/dist/images/avery-gallery-2.jpg') no-repeat;
+	url('/dist/images/assorted.jpeg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
