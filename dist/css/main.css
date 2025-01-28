@@ -148,7 +148,7 @@ body{
 	border: 2px solid #FF5B76;
 	border-radius: 20px;
 	position: absolute;
-	top: 100%;
+	top: 90%;
 	left: 50%;
 	right: 50%;
 	transform: translate(-50% , -50%) !important;
@@ -266,7 +266,7 @@ body{
 }
 .three{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
-	url('/dist/images/avery-gallery-11.jpg') no-repeat;
+	url('/dist/images/single-cookies.jpeg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -280,14 +280,14 @@ body{
 }
 .five{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
-	url('/dist/images/avery-gallery-9.jpg') no-repeat;
-	background-position: center;
+	url('/dist/images/double-layer.jpeg') no-repeat;
+	background-position: 0% 80%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .six{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
-	url('/dist/images/avery-gallery-3.jpg') no-repeat;
+	url('/dist/images/v-day.jpeg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -295,6 +295,13 @@ body{
 .seven{
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
 	url('/dist/images/mini-bundt.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.eight{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.301) 59%, rgba(0, 0, 0, 1) 100%),
+	url('/dist/images/focaccia.jpeg') no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
