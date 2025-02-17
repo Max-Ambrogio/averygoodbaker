@@ -55,6 +55,9 @@ gsap.from('.about-copy p',{
     stagger:.5,
 })
 
+let hey = document.getElementsByClassName(".shopify-buy-frame")
+console.log("if ur readingg this ur a nerd")
+
 
 
 

@@ -541,6 +541,26 @@ footer{
 	padding-left: 10px;
 }
 
+.merch{
+	background-color: #FF5B76	;
+	margin: 0px !important;
+}
+
+.merch-container{
+	margin: 0px 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.shopify-buy__btn{
+	background-color: #D9D9D9 !important;
+}
+
+
+.shopify-buy__product__title{
+	color: #D9D9D9 !important ;
+}
 
 @media (max-width: 640px) {
 	.copyright{
